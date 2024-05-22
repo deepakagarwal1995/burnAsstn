@@ -10,6 +10,7 @@
 
     <title>{{ $title ?? 'Admin' }} | {{ config('app.name') }}</title>
     <meta content="{{ config('app.name') }}" name="description">
+    <link rel="icon" href="{{ config('app.url') }}/assets/images/fav.png" type="image/x-icon">
 
     @include('admin.inc.headerLinks')
 

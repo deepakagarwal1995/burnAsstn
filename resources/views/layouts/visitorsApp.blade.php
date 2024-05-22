@@ -8,7 +8,7 @@
     <title>{{ $page_title ?? 'APBA' }} | Asia Pacific Burn Association</title>
     <meta name="description" content="{{ $page_description ?? 'The Asia Pacific Burn Association (APBA) is a non-profit organization which aims for improvement in burn care in the Asia Pacific Region' }}" />
     <meta property="og:title" content="{{ $title ?? 'APBA' }} | Asia Pacific Burn Association">
-    <meta property="og:image" content="{{ config('app.url') }}/assets/img/logo.png">
+    <meta property="og:image" content="{{ config('app.url') }}/assets/images/logo.png">
     <meta property="og:description" content="{{ $page_description ?? 'The Asia Pacific Burn Association (APBA) is a non-profit organization which aims for improvement in burn care in the Asia Pacific Region' }}">
 
     @include('inc.headerLinks')
