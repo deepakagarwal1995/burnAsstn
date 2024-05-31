@@ -11,19 +11,11 @@
     <title>{{ $title ?? 'Admin' }} | {{ config('app.name') }}</title>
     <meta content="{{ config('app.name') }}" name="description">
     <link rel="icon" href="{{ config('app.url') }}/assets/images/fav.png" type="image/x-icon">
-
     @include('admin.inc.headerLinks')
-
     @yield('head')
-
-
-
 </head>
 
 <body>
-
-
-
 
     <div class="app-admin-wrap layout-sidebar-large clearfix">
 

@@ -327,9 +327,12 @@ h1,h2,h3,h4,h5,h6{
 
 @media screen and (max-width: 767px) {
    .carousel.slide img{
-            min-height: 50vh;
-                object-fit: cover;
+                min-height: auto;
+                    object-fit: unset;
     }
+        .about-style-three .image-box .image img{
+            height: 150px;
+        }
   .handle-preloader .animation-preloader .spinner {
     height: 8em;
     width: 8em;
@@ -3106,8 +3109,8 @@ position: relative;
 .team-block-one .inner-box .image-box{
     position: relative;
         display: block;
-        height: 278px;
-        width: 100%;
+        height: 100%;
+            width: 100%;
         border-radius: 0;
         margin: 0 auto;
         margin-bottom: 19px;
@@ -3167,8 +3170,8 @@ position: relative;
 border-radius: 0;
     transition: all 500ms ease;
     object-fit: cover;
-    height: 278px;
-    width: 100%;
+    height: 100%;
+        width: 100%;
     object-position: center;
 }
 
@@ -4849,7 +4852,7 @@ border-radius: 0;
             padding-right: 20px !important;
             padding-bottom: 14px !important;
             padding-left: 20px !important;
-            background-color: rgba(0, 0, 0, 0.04);
+            background-color: rgba(0, 0, 0, 0.04);margin-bottom: 26px;
 }.members img{
         height: 140px;
             width: 140px;
@@ -8878,7 +8881,7 @@ font-size: 38px;
   font-family: 'flaticon';
     font-size: 12px;
         color: #fff;
-        top: 5px;
+        top: 0px;
         right: -22px;
         font-weight: 400;
 }
