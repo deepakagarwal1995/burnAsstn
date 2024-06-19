@@ -63,6 +63,7 @@ class CommitteeController extends Controller
      */
     public function store(Request $request)
     {
+        //dd($request->post());
         $request->validate([
             'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048',
         ]);

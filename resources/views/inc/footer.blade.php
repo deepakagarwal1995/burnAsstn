@@ -2,7 +2,7 @@
         <div class="auto-container">
             <div class="row clearfix">
 
-                <div class="col-lg-8 col-md-12 col-sm-12 content-column">
+                <div class="col-lg-8 col-md-12 col-sm-12 content-column text-center-sm">
                     <div class="content-box">
                         <div class="sec-title mb-0">
                             <h2 style="color: #fff;">Join APBA</h2>
@@ -12,8 +12,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-12 col-sm-12 content-column text-end">
-                    <div class="btn-box">
+                <div class="col-lg-4 col-md-12 col-sm-12 content-column text-end text-center-sm">
+                    <div class="btn-box mt-3">
                         <a href="{{route('registration')}}" class="theme-btn btn-one"
                             style="
     background: #fff;
@@ -25,7 +25,7 @@
         </div>
     </section>
 
-    
+
 
     <footer class="main-footer">
      <div class="widget-section">
@@ -175,10 +175,10 @@ cb=googleTranslateElementInit">
      <div class="footer-bottom ">
          <div class="auto-container">
             <div class="row">
-    <div class="col-md-6"><div class="copyright">
+    <div class="col-md-6"><div class="copyright text-center-sm">
                      <p>Copyrights &copy; 2024 <a href="#">apburn.org</a>. All rights reserved </p>
                  </div></div>
-    <div class="col-md-6"><p class="mb-0 ftext text-md-end">Design & Develop By <a href="https://www.papercodetech.com/" target="_blank" style="    color: #fff;
+    <div class="col-md-6"><p class="mb-0 ftext text-md-end text-center-sm">Design & Develop By <a href="https://www.papercodetech.com/" target="_blank" style="    color: #fff;
     text-decoration: none;">Paper Code Technologies</a>
 </p></div>
     </div>

@@ -117,11 +117,24 @@ class HomeController extends Controller
 
             return Datatables::of($data)
                 ->addIndexColumn()
+                ->addColumn('action', function ($data) {
+                    return '<div class="action">
+                        <a href="' . route('delete.member', $data->id) . '" class="btn btn-danger">Delete</a>
+                        </div>';
+                })
                 ->rawColumns(['action'])
                 ->make(true);
         }
         $title = 'View Registration Enquiry';
         return view('admin.enquiry.member', compact('title'));
+    }
+    public function deleteMember(Request $request)
+    {
+        $id = $request->id;
+        $orderDetail = Registration::find($id);
+        $orderDetail->delete();
+        return redirect()->route('member')->with('success', 'Registration has been successfully deleted.');
+
     }
     public function memberAdd()
     {

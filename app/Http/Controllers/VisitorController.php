@@ -72,6 +72,12 @@ class VisitorController extends Controller
         $title = $items->title;
         return view('visitors.eventdetails', compact('items', 'title'));
     }
+    public function view_member(Request $request, $id,$name)
+    {
+        $items = Committee::where('id', $id)->first();
+        $title = $items->name;
+        return view('visitors.committeDetail', compact('items', 'title'));
+    }
     public function pastEvents()
     {
         return view('visitors.past-events');
@@ -87,7 +93,8 @@ class VisitorController extends Controller
     {
         $items = Resources::where('type', 'Books')->latest()->get();
         $title = 'Latest Books';
-        return view('visitors.books', compact('items', 'title'));
+        $type = 'Books';
+        return view('visitors.books', compact('items', 'title', 'type'));
     }
     public function PDFresources()
     {

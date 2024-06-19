@@ -14,6 +14,7 @@ class Committee extends Model
         'fb',
         'insta',
         'twitt',
+        'descr',
         'type'
     ];
     use HasFactory;

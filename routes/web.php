@@ -43,6 +43,7 @@ Route::get('/reports', [VisitorController::class, 'reports'])->name('reports');
 Route::get('/books', [VisitorController::class, 'books'])->name('books');
 Route::post('/submit-basic', [VisitorController::class, 'submitBasic'])->name('submitBasic');
 Route::get('/view-resource/{id}', [VisitorController::class, 'view_resource'])->name('view_resource');
+Route::get('/member-detail/{id}/{name}', [VisitorController::class, 'view_member'])->name('committeeDetail');
 Route::get('/PDF-resources', [VisitorController::class, 'PDFresources'])->name('PDFresources');
 Route::get('/video-resources', [VisitorController::class, 'videoresources'])->name('videoresources');
 Route::get('/blogs', [VisitorController::class, 'blogs'])->name('blogs');
@@ -76,6 +77,7 @@ Route::middleware(['auth'])->prefix('admin')->group(function () {
     Route::resource('ress', ResourcesController::class);
     Route::resource('gallery', GalleryController::class);
     Route::get('/reorder-members/{type}', [CommitteeController::class, 'reorderView'])->name('reorder.view');
+    Route::get('/delete-member/{id}', [HomeController::class, 'deleteMember'])->name('delete.member');
     Route::post('/reorder-members', [CommitteeController::class, 'reorderAction'])->name('reorder.action');
 });
 

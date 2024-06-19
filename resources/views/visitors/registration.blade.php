@@ -736,7 +736,7 @@
                                                     </optgroup>
                                                 </select>
                                                 <input name="contact" type="number" required=""
-                                                    class="form-control">
+                                                    class="form-control" style="margin-left:10px">
                                             </div>
                                         </div>
 

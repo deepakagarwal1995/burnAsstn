@@ -1,5 +1,15 @@
 @extends('layouts.visitorsApp', ['page_title' => 'Contact'])
 @section('content')
+
+<style>
+    .info-block-two .inner-box .icon-box {
+    width: 111px;
+    height: 111px;
+    }
+      .info-block-two p {
+ font-size: 12px;
+    }
+</style>
     <section class="page-title">
         <div class="bg-layer" style="background-image: url({{ config('app.url') }}/assets/images/banner/banner-3.jpg);"></div>
         <div class="pattern-layer" style="background-image: url({{ config('app.url') }}/assets/images/shape/shape-20.png);">
@@ -26,7 +36,7 @@
                 <div class="four-item-carousel owl-carousel owl-theme owl-nav-none">
                                 <div class="info-block-two">
                                     <div class="inner-box">
-                                        <div class="icon-box"><img src="assets/images/icons/icon-89.png" alt=""></div>
+                                        <div class="icon-box"><img src="{{ config('app.url') }}/assets/images/rachel.jpg" alt="members"></div>
                                         <h3>Rachel Kornhaber</h3>
                                         <p>Secretary APBA</p>
                                         <div class="text-box">
@@ -37,7 +47,7 @@
 
                                 <div class="info-block-two">
                                     <div class="inner-box">
-                                        <div class="icon-box"><img src="assets/images/icons/icon-89.png" alt=""></div>
+                                        <div class="icon-box"><img src="{{ config('app.url') }}/assets/images/rajeev-ahuja.jpg" alt="members"></div>
                                         <h3>Rajeev Ahuja</h3>
                                         <p>Founder President & Executive Director</p>
                                         <div class="text-box">
@@ -48,7 +58,7 @@
 
                                 <div class="info-block-two">
                                     <div class="inner-box">
-                                        <div class="icon-box"><img src="assets/images/icons/icon-89.png" alt=""></div>
+                                        <div class="icon-box"><img src="{{ config('app.url') }}/assets/images/vinita-puri.jpg" alt="members"></div>
                                         <h3>Vinita Puri</h3>
                                         <p>President APBA</p>
                                         <div class="text-box">
@@ -59,7 +69,7 @@
 
                                 <div class="info-block-two">
                                     <div class="inner-box">
-                                        <div class="icon-box"><img src="assets/images/icons/icon-89.png" alt=""></div>
+                                        <div class="icon-box"><img src="{{ config('app.url') }}/assets/images/1717308091.jpg" alt="members"></div>
                                         <h3>Pallab Chatterjee</h3>
                                         <p>Web Master</p>
                                         <div class="text-box">

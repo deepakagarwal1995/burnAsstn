@@ -326,6 +326,9 @@ h1,h2,h3,h4,h5,h6{
 }
 
 @media screen and (max-width: 767px) {
+  .text-center-sm{
+    text-align: center !important;
+  }
    .carousel.slide img{
                 min-height: auto;
                     object-fit: unset;

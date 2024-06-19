@@ -1,5 +1,11 @@
 @extends('layouts.app', ['title' => $title])
 @section('content')
+
+<style>
+.ck-editor__editable_inline {
+    min-height: 310px;
+}
+</style>
 <div class="main-content-wrap sidenav-open d-flex flex-column">
                 <div class="main-content">
                                <div class="breadcrumb">
@@ -55,6 +61,10 @@
                                         <label for="validationCustom02">Twitter Link</label>
                                         <input type="text" class="form-control" name="twitt" >
                                     </div>
+                                     <div class="col-md-12 mb-3">
+                                        <label for="validationCustom02">Full Details</label>
+                                        <textarea class="form-control" id="editor" rows="8" name="descr" ></textarea>
+                                    </div>
 
 
                                 </div>
@@ -73,3 +83,18 @@
         </div>
 
         @endsection
+
+        @section('script')
+<script src="https://cdn.ckeditor.com/ckeditor5/41.2.1/classic/ckeditor.js"></script>
+<script>
+                        ClassicEditor
+                                .create( document.querySelector( '#editor' ) )
+                                .then( editor => {
+                                        console.log( editor );
+                                } )
+                                .catch( error => {
+                                        console.error( error );
+                                } );
+                </script>
+@endsection
+

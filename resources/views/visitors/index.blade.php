@@ -114,7 +114,7 @@ active
 
 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 single-column">
-                    <h4 class="member-title">Message from Founder President</h4>
+                    <h4 class="member-title text-center-sm">Message from Founder President</h4>
                     <div class="members">
                         <img src="{{ config('app.url') }}/assets/images/rajeev-ahuja.jpg" alt="members">
 
@@ -131,7 +131,7 @@ active
                     </div> <!-- .et_pb_testimonial_description -->
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 single-column">
-                    <h4 class="member-title">Message from Prestdent</h4>
+                    <h4 class="member-title text-center-sm">Message from President</h4>
                     <div class="members">
                         <img src="{{ config('app.url') }}/assets/images/vinita-puri.jpg" alt="members">
 
@@ -150,7 +150,7 @@ active
                     </div> <!-- .et_pb_testimonial_description -->
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 single-column">
-                    <h4 class="member-title">Message from Secretary</h4>
+                    <h4 class="member-title text-center-sm">Message from Secretary</h4>
                     <div class="members">
                         <img src="{{ config('app.url') }}/assets/images/rachel.jpg" alt="members">
 

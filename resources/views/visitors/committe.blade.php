@@ -44,6 +44,15 @@
                                 @endif
 
                             </ul>
+                            @php
+                                $name =strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', $row->name)));
+                            @endphp
+                            <a href="{{route('committeeDetail',['id' => $row->id,'name' => $name])}}" class="theme-btn btn-one mt-3" style="display: block;
+    padding: 13px 5px;
+    height: auto;
+    line-height: 10px;
+    max-width: 149px;
+    margin: auto;">Read More</a>
 
                         </div>
                     </div>

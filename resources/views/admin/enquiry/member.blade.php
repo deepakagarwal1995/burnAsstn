@@ -69,6 +69,7 @@
                                             <th scope="col">Membership number</th>
 
                                             <th scope="col">Date</th>
+                                            <th scope="col">action</th>
 
 
                                         </tr>
@@ -148,6 +149,8 @@ $(document).ready(function(){
             {data: 'country', name: 'country'},
             {data: 'details', name: 'details'},
             {data: 'dated', name: 'created_at'},
+            {data: 'action', name: 'action'},
+
         ]
 
   });
