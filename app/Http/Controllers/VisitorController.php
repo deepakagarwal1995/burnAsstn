@@ -201,7 +201,7 @@ class VisitorController extends Controller
 
         $insrt->name = $request->name;
         $insrt->email = $request->email;
-        $insrt->phone = $request->phone;
+        $insrt->phone = $request->code.$request->phone;
         $insrt->type = $request->type;
         $insrt->subject = $request->subject;
         $insrt->messg = $request->messg;
